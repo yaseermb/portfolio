@@ -1,0 +1,15 @@
+json
+
+{
+    "name": "MY PORTFOLIO",
+    "short_name": "WebApp",
+    "start_url":"index.html",
+    "display": "stanalone",
+    "background_color": "#f5f5f5",
+    "theme_color": "#2f3ba2",
+    "icons": [
+        "src": "icon-512.png",
+        "size": "512x512",
+        "type": "image/png"
+    ]
+}

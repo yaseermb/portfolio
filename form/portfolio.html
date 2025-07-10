@@ -1,0 +1,132 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>YASEER MUSTAPHA-PORTFOLIO</title>
+    <link rel="manifest" href="manifest.json">>
+    <style>
+         body{
+            font-family: sans-serif;
+            margin: 0;
+            padding: 0;
+            background: #f5f5f5;
+            color: rgb(49, 49, 49);
+            transition:  0.3s color 0.3s;
+         }
+         header{
+            background: #222;
+            color: white;
+            text-align: center;
+            padding: 40px 10px;
+         }
+         section{
+            padding:20px;
+            background: white;
+            margin: 10px;
+            border-radius: 8px;
+            opacity:0;
+            transform: translateY(30px);
+            animation: fadeIn 0.6s ease-out forwards;
+            animation-delay: 0.3s;
+         }
+         button{
+            margin: 10px;
+            padding: 10px 20px;
+            cursor: pointer;
+            background: green;
+            color: white;
+            border-radius: 10px;
+            border: none;
+         }
+         body.dark header{
+                background:;
+                color: #f0f0f0;
+         }
+         @keyframes fadeIn{
+            to{
+                opacity: 1;
+                transform: translateY(0);
+            }
+         }
+         body.dark.button{
+            background:#000000;
+            color:white;
+            border: none;
+         }
+         body.dark{
+            background: #121212;
+            color: #f0f0f0;
+         }
+         body.dark.section{
+            background: black;
+            color: #f0f0f0;
+         }
+         img{
+            height: 250px;
+            width: 250px;
+            border-radius: 20px;
+            transform: translateY(30px);
+            animation: bounce 0.6s ease-out forwards;
+            animation-delay: 0.3s;
+         }
+         @keyframes bounce{
+            to{
+                opacity: 1;
+                transform: translateY(0);
+            }
+         }
+         a{
+            text-decoration-line: none;
+            font-family: sans-serif;
+            text-decoration: #222;
+         }
+    </style>
+</head>
+<body>
+    <header>
+      <img src="icon.192.JPG" alt="">
+        <h1>YASEER MUSTAPHA</h1>
+        <P>Front End Developer | Grey Hat Hacker</P>
+    </header>
+<button onclick="toggleDarkMode()">toggle Dark Mode</button>
+
+   <section id="about">
+    <h2>About Me</h2>
+    <p>
+        i'm a 400lvl student of FUDMA.
+        passionate about building modern web interfaces
+    </p>
+   </section>
+   <section id="project">
+    <h2>Project</h2>
+    <div class="project">
+        <h3>My Portfolio</h3>
+        <p>A personal site showcasting my web projects.</p>
+        <a href="#">LIVE DEMO</a> | <a href="yaseeemb.github">GitHub</a>
+    </div>
+   </section>
+   <section id="skills">
+    <h2>Skills</h2>
+<ul>
+    <li>HTML, CSS, JAVASCRIPT</li> 
+    <li>GRAPHICS DESIGN</li>
+    <li>WEB DESIGN</li>
+    <li>CONTENT CREATION</li>
+    <li>TAILWIND, BOOTSTRAP</li>
+    <li>GIT, VS CODE</li>
+</ul>
+   </section>
+   <section id="contact">
+    <h2>Contact</h2>
+       <p><a href="yaseermustapha2020@gmail.com">Email</a></p>
+       <p> <a href="https://wa.me/08149438068">WhatsApp</a></p>
+   </section>
+   <script>
+    function toggleDarkMode(){
+        document.body.classList.toggle('dark')
+    }
+  
+   </script>
+</body>
+</html>
